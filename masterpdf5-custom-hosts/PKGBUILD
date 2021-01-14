@@ -1,6 +1,6 @@
 # Maintainer: Joonas Kärkkäinen <group55 @ eth1 dot fi>
 
-pkgname=masterpdfeditor5
+pkgname=masterpdfeditor
 pkgver=5.6.80
 pkgrel=1
 pkgdesc='A complete solution for viewing, creating and editing PDF files. My own custom install.'
@@ -8,13 +8,16 @@ url='https://code-industry.net'
 arch=('x86_64')
 license=('proprietary')
 depends=('libgl' 'nspr' 'nss' 'qt5-base' 'qt5-svg' 'sane')
-makedepends=('patchelf')
 conflicts=('masterpdfeditor-free')
-install="${pkgname}.install"
-source_x86_64=("https://code-industry.net/public/master-pdf-editor-${pkgver}-qt5.x86_64.tar.gz"
-               masterpdfeditor5.desktop)
-sha256sum=('0225cccbda7a3d0b7a6041c64cbda6f997d3095d'
-          'b33e7148123565fd4cc15d41c493f6ab27d37ba4')
+install="masterpdfeditor.install"
+source=("https://github.com/AgentOrange007/PKGBUILDs/raw/main/masterpdf5-custom-hosts/master-pdf-editor-5.6.80-qt5.x86_64.tar.gz"
+               "https://github.com/AgentOrange007/PKGBUILDs/blob/main/masterpdf5-custom-hosts/masterpdfeditor5.desktop"
+               "https://github.com/AgentOrange007/PKGBUILDs/blob/main/masterpdf5-custom-hosts/masterpdfeditor5.install"
+               )
+sha256sum =('9fbda562095ddaca973af73aaefd51f8e46dc30e215469bb5183958a60dae207'
+          '870da3bd61bf285dafdfba932e39964c995f53fd999383e10228b1f01821c2c8'
+          'c070fc590de4cb43c97525c2d96bf8f540063fbe097f190f773a2453b6db2c04')
+
 
 validpgpkeys=('8E1430F51C8C334AF2B1983FF6432769E0D273B8') # Joonas Kärkkäinen
 

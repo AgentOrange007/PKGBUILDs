@@ -1,17 +1,17 @@
-pkgbase = masterpdfeditor5
+pkgbase = masterpdfeditor
 	pkgdesc = A complete solution for viewing, creating and editing PDF files My own custom install.
 	pkgver = 5.6.80
 	pkgrel = 1
 	url = https://code-industry.net
 	arch = x86_64
 	license = proprietary
-	makedepends = patchelf
-	source_x86_64 = https://code-industry.net/public/master-pdf-editor-5.6.80-qt5.x86_64.tar.gz
-	source_x86_64 = masterpdfeditor5.desktop
-	sha1sums_x86_64 = 0225cccbda7a3d0b7a6041c64cbda6f997d3095d
-	sha1sums_x86_64 = b33e7148123565fd4cc15d41c493f6ab27d37ba4
+	source = https://github.com/AgentOrange007/PKGBUILDs/raw/main/masterpdf5-custom-hosts/master-pdf-editor-5.6.80-qt5.x86_64.tar.gz
 
-pkgname = masterpdfeditor5
+	sha256sum =('9fbda562095ddaca973af73aaefd51f8e46dc30e215469bb5183958a60dae207'
+             '870da3bd61bf285dafdfba932e39964c995f53fd999383e10228b1f01821c2c8'
+            'c070fc590de4cb43c97525c2d96bf8f540063fbe097f190f773a2453b6db2c04')
+
+pkgname = masterpdfeditor
 	depends = libgl
 	depends = nspr
 	depends = nss
